@@ -1,7 +1,5 @@
-require("dotenv").config();
-
-const cowsay = require("cowsay");
-
+import cowsay from "cowsay";
+import "dotenv/config";
 console.log(
   cowsay.say({
     text: process.env.NAME + process.env.CAMPUS,
